@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ album.albumname }}</h2>
+<p>Album Genre Type: {{ album.albumgenretype }}</p>
+<p>Added by: {{ album.user }}</p>
+<p>Entry Date: {{ album.albumreviewentrydate }}</p>
+<p>URL: {{ album.albumurl }}</p>
+<p>Album Review: {{ album.albumreview }}</p>
+<p>No. Of Reviews: {{ reviews }}</p>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Albums</h2>
+<table class="table">
+  <tr>
+      <th>Album Name</th>
+      <th>Genre Type</th>
+  </tr>
+  {% for p in albums_list %}
+    <tr>
+        <td><a href="{% url 'albumdetails' id=p.id %}">{{ p.albumname }}</a></td>
+        <td> {{p.albumtype }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}
